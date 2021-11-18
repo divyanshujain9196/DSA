@@ -1,5 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
+
 bool compare(pair<int, int> x, pair<int, int> y) {
 	int f1 = x.second / x.first;
 	int f2 = y.second / y.first;
@@ -29,7 +30,7 @@ int main() {
     cin>>W;
     
 	vector<pair<int, int>> a;
-    cout<<"enter wieght and cost of items ";
+    cout<<"enter weight and cost of items ";
     for(int i=0;i<n;i++){
 		int f, s;
 		cin>>f>>s;             // f --> weight , s --> cost
