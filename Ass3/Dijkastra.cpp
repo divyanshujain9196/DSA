@@ -2,20 +2,15 @@
 using namespace std;
 #define ll long long
 #define vi vector<int>
-#define vvi vector<vector<int>>
-#define gcd(x, y) __gcd(x, y)
-#define f(i, a, b) for(int i = a; i<b; i++)
-#define pii pair<int, int>
-#define vii vector<pi>
-#define pb(x) push_back(x)
-#define ff first
-#define ss second
-#define mii map<int, int>
+
 const int mod = 1e9+7, inf = 1e5+2;
 int main() {
-	int vertices, edges;cin>>vertices>>edges;
+	int vertices, edges;
+	cout<<"enter no of vertices and edges";
+	cin>>vertices>>edges;
 	vi dist(vertices+1, inf);
 	vector<vector<pair<int, int>>> graph(vertices+1);
+	cout<<"enter the edges with weight ";
 	for(int i = 0; i<edges; i++) {
 		int x, y, w;
 		cin>>x>>y>>w;
@@ -39,6 +34,7 @@ int main() {
 			}
 		}
 	}
+	cout<<"Distance between  "<<source<<" and vertex: "<<endl;
 	for(int i = 0; i<=vertices; i++) {
 		if(dist[i] < inf) cout<<i<<": "<<dist[i]<<endl;
 		else cout<<i<<": -1"<<endl;

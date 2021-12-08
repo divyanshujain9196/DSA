@@ -9,7 +9,9 @@ vector<bool> vis(N, false);
 int main() {
 	
 	int edges, vertices;
+	cout<<"Enter the no of vertices and edges";
 	cin>>vertices>>edges;
+	cout<<"enter the edges";
 	for(int i = 0; i<edges; i++) {
 		int x, y;cin>>x>>y;
 		graph[x].push_back(y);

@@ -41,7 +41,7 @@ void printArray(int arr[], int n)
     cout << "\n";
 }
 
-// Driver code
+
 int main()
 {
     
